@@ -7,7 +7,7 @@ class Comment < ActiveRecord::Base
       if user_name != ""
         @user = User.find_or_create_by(username: user_name)
         self.user_id = @user.id
-      end 
+      end
     end
   end
 
